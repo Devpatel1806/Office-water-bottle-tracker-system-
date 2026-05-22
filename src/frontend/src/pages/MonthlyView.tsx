@@ -43,7 +43,7 @@ const MonthlyView = () => {
     delivery_days: 0,
   });
   const [currentPage, setCurrentPage] = useState(1);
-  const itemsPerPage = 6;
+  const itemsPerPage = 10;
   const [month, setMonth] = useState(new Date().getMonth() + 1);
   const [year, setYear] = useState(new Date().getFullYear());
   const [loading, setLoading] = useState(false);
