@@ -87,7 +87,7 @@ const MonthlyView = () => {
           <p>Detailed hydration records and consumption patterns for Office A.</p>
         </div>
         <div className="header-actions">
-          <MonthSelector
+          <MonthSelector 
             month={month}
             year={year}
             onChange={(m, y) => {

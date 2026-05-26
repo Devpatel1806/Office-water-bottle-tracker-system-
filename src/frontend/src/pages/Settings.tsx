@@ -189,7 +189,7 @@ const Settings = () => {
                           <td>
                             <span
                               style={{
-                                background: isActive ? "#3b82f6" : "#ccc",
+                                background: isActive ? "#3b82f6" : "#6b7280",
                                 color: "#fff",
                                 padding: "4px 8px",
                                 borderRadius: "4px",
@@ -206,7 +206,7 @@ const Settings = () => {
               </table>
 
               {history.length > 4 && (
-                <p className="view-all" onClick={() => setShowAll(!showAll)}>
+                <p className="view-all-end" onClick={() => setShowAll(!showAll)}>
                   {showAll ? "Show Less" : "View All Transaction History"}
                 </p>
               )}
