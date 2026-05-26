@@ -4,6 +4,8 @@ import MonthlyView from "./pages/MonthlyView";
 import Settings from "./pages/Settings";
 import { MdDashboard, MdCalendarMonth } from "react-icons/md";
 import { IoMdSettings } from "react-icons/io";
+import Footer from "./pages/Footer";
+// import Footer from "./pages/Footer";
 
 export default function App() {
   return (
@@ -42,7 +44,6 @@ export default function App() {
           </li>
         </ul>
       </aside>
-
       {/* Pages */}
       <main className="main">
         <Routes>
@@ -52,6 +53,7 @@ export default function App() {
           {/* Default redirect */}
           <Route path="*" element={<Dashboard />} />
         </Routes>
+        <Footer />
       </main>
     </div>
   );

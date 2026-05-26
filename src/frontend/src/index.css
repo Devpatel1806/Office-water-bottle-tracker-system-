@@ -15,18 +15,13 @@
   --sidebar: rgba(15, 23, 42, 0.85);
   --card: rgba(255, 255, 255, 0.06);
   --card-border: rgba(255, 255, 255, 0.08);
-
   --primary: #38bdf8;
   --primary-dark: #0ea5e9;
-
   --text: #f8fafc;
   --muted: #94a3b8;
-
   --success: #22c55e;
   --danger: #ef4444;
-
   --shadow: 0 8px 30px rgba(0, 0, 0, 0.35);
-
   --radius: 18px;
 }
 
@@ -701,7 +696,58 @@ tbody tr:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 10px;
+  padding: 17px;
+}
+
+.footer {
+  width: 100%;
+  padding: 14px 25px;
+
+  /* Remove Bottom Space */
+  margin: 0;
+
+  /* Fixed Footer */
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+
+  /* Background */
+  background: linear-gradient(
+    90deg,
+    rgba(15, 23, 42, 0.95),
+    rgba(30, 41, 59, 0.95)
+  );
+
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: #cbd5e1;
+  font-size: 14px;
+  font-weight: 500;
+
+  backdrop-filter: blur(10px);
+  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* Footer Links */
+.footer a {
+  color: #38bdf8;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer a:hover {
+  color: #0ea5e9;
+  text-shadow: 0 0 10px rgba(56, 189, 248, 0.6);
+}
+
+/* Gap */
+.footer-gap {
+  margin-left: 5px;
 }
 
 /* =========================
