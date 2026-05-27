@@ -45,7 +45,7 @@ const EntryForm = ({ onSave, editItem, saveLoading }: Props) => {
 
       <div className="form-row">
         <div className="form-group">
-          <p>DELIVERY DATE</p>
+          <p>Delivery Date</p>
           <input
             type="date"
             value={date}
@@ -54,7 +54,7 @@ const EntryForm = ({ onSave, editItem, saveLoading }: Props) => {
         </div>
 
         <div className="form-group">
-          <p>BOTTLE COUNT</p>
+          <p>Bottle Count</p>
           <input
             type="number"
             value={count}

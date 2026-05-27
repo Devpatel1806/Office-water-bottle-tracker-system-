@@ -20,37 +20,37 @@ const SummaryCard = ({
 
   return (
     <div className="analytics-wrapper">
-      <p className="para">MONTHLY ANALYTICS</p>
+      <p className="para">Monthly Analytics</p>
 
       <div className="analytics-card">
         <div className="analytics-cell">
-          <p>CURRENT <br /> MONTH</p>
+          <p>Current Month</p>
           <h3>{currentMonth}</h3>
         </div>
 
         <div className="analytics-cell">
-          <p>Total <br /> Bottles</p>
+          <p>Total Bottles</p>
           <h3>
             {loading ? <span className="mini-loader"></span> : totalBottles}
           </h3>
         </div>
 
         <div className="analytics-cell">
-          <p>Delivery <br /> Days</p>
+          <p>Delivery Days</p>
           <h3>
             {loading ? <span className="mini-loader"></span> : days}
           </h3>
         </div>
 
         <div className="analytics-cell">
-          <p>Price / <br /> Bottle</p>
+          <p>Price Per Bottle</p>
           <h3>
             {loading ? <span className="mini-loader"></span> : `Rs. ${price}`}
           </h3>
         </div>
 
         <div className="analytics-cell">
-          <p>Total <br /> Amount</p>
+          <p>Total Amount</p>
           <h3>
             {loading ? (
               <span className="mini-loader"></span>

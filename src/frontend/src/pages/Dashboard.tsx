@@ -91,7 +91,7 @@ const Dashboard = () => {
   return (
     <div className="main">
       <h1>Water Bottle Tracker</h1>
-      <p className="para">
+      <p className="para" style={{ color: "#94a3b8" }}>
         Monitor and manage hydration logistics for the office.
       </p>
 

@@ -1,15 +1,29 @@
+import { Link } from "react-router-dom";
+
 const Footer = () => {
   return (
     <footer className="footer">
-      ©
-      <span className="footer-gap">
-        {new Date().getFullYear()}
-      </span>
+     <div className="footer-left">
+    <Link to="/" className="footer-link">
+      © {new Date().getFullYear()} Water Bottle Tracker System
+    </Link>{" "}
+    | All Rights Reserved
+  </div>
 
-      <a href="http://localhost:5173/" className="footer-gap">
-        Water Bottle Tracker System
+      <a
+        href="https://aptechsolutions.io/"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Visit Aptech Solutions website"
+        className="footer-company"
+      >
+        <img
+          src="logo.png"
+          alt="Aptech Solutions Logo"
+          className="company-logo"
+          loading="lazy"
+        />
       </a>
-      | All Rights Reserved
     </footer>
   );
 };

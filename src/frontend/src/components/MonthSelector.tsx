@@ -19,18 +19,26 @@ const MonthSelector = ({ month, year, onChange }: Props) => {
   };
 
   return (
-    <select value={`${month}-${year}`} onChange={handleChange}>
-      {years.map((y) =>
-        months.map((name, idx) => {
-          const m = idx + 1;
-          return (
-            <option key={`${m}-${y}`} value={`${m}-${y}`}>
-              {name} {y}
-            </option>
-          );
-        })
-      )}
-    </select>
+   <select
+  value={`${month}-${year}`}
+  onChange={handleChange}
+  style={{
+    borderRadius: "8px",
+    padding: "8px 12px",
+  }}
+>
+  {years.map((y) =>
+    months.map((name, idx) => {
+      const m = idx + 1;
+
+      return (
+        <option key={`${m}-${y}`} value={`${m}-${y}`}>
+          {name} {y}
+        </option>
+      );
+    })
+  )}
+</select>
   );
 };
 

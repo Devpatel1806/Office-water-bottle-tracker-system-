@@ -85,7 +85,7 @@ const EntryTable = ({
                       className="btn-edit"
                       onClick={() => onEdit(item)}
                     >
-                      <FaEdit />
+                      Edit
                     </button>
 
                     <button
@@ -95,7 +95,7 @@ const EntryTable = ({
                     >
                       {deleteLoadingId === item._id
                         ? "Deleting..."
-                        : <FaTrash />}
+                        : "Delete"}
                     </button>
                   </td>
                 </tr>
