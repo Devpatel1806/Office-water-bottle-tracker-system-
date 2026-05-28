@@ -67,7 +67,7 @@ const EntryForm = ({ onSave, editItem, saveLoading }: Props) => {
           onClick={handleSubmit}
           disabled={saveLoading}
         >
-          {saveLoading ? "Saving..." : editItem ? "Update" : "Save Entry"}
+          {saveLoading ? "Saving..." : editItem ? "Update" : "SaveEntry"}
         </button>
       </div>
     </div>

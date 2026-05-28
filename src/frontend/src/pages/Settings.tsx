@@ -189,10 +189,10 @@ const Settings = () => {
                           <td>
                             <span
                               style={{
-                                background: isActive ? "#3b82f6" : "#6b7280",
+                                background: isActive ? "#38bdf8" : "#6b7280",
                                 color: "#fff",
                                 padding: "4px 8px",
-                                borderRadius: "4px",
+                                borderRadius: "8px",
                               }}
                             >
                               {isActive ? "Active" : "Archived"}

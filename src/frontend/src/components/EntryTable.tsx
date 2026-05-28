@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { FaEdit, FaTrash } from "react-icons/fa";
 import type { Entry } from "../types";
 
 type Props = {
@@ -34,7 +33,8 @@ const EntryTable = ({
         <h2>Recent Activity</h2>
       </div>
 
-      <div className="cards" style={{ marginBottom: "80px" }}>
+      {/* TABLE CARD */}
+      <div className="table-card" style={{ marginBottom: "80px" }}>
         <table>
           <thead>
             <tr>
@@ -47,7 +47,7 @@ const EntryTable = ({
           </thead>
 
           <tbody>
-            {/* ✅ LOADER */}
+            {/* LOADER */}
             {loading ? (
               <tr>
                 <td colSpan={5}>
@@ -66,10 +66,14 @@ const EntryTable = ({
             ) : (
               visibleData.map((item) => (
                 <tr key={item._id}>
-                  <td className="det">{formatDate(item.date)}</td>
+                  <td className="det">
+                    {formatDate(item.date)}
+                  </td>
 
                   <td>
-                    <span className="badge">{item.bottle_count}</span>
+                    <span className="badge">
+                      {item.bottle_count}
+                    </span>
                   </td>
 
                   <td className="prices">
@@ -104,9 +108,15 @@ const EntryTable = ({
           </tbody>
         </table>
 
+        {/* VIEW ALL */}
         {data.length > 4 && !loading && (
-          <p className="view-all" onClick={() => setShowAll(!showAll)}>
-            {showAll ? "Show Less" : "View All Transaction History"}
+          <p
+            className="view-all"
+            onClick={() => setShowAll(!showAll)}
+          >
+            {showAll
+              ? "Show Less"
+              : "View All Transaction History"}
           </p>
         )}
       </div>
